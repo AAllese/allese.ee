@@ -22,7 +22,32 @@
       }
       p {
         color: #aaaaaa;
+        margin-bottom: 20px;
+      }
+      .loading-container {
+        width: 300px;
+        height: 10px;
+        background-color: #333;
+        border-radius: 5px;
+        overflow: hidden;
         margin-bottom: 30px;
+      }
+      .loading-bar {
+        height: 100%;
+        width: 0;
+        background-color: #007bff;
+        animation: load 3s infinite ease-in-out;
+      }
+      @keyframes load {
+        0% {
+          width: 0;
+        }
+        50% {
+          width: 100%;
+        }
+        100% {
+          width: 0;
+        }
       }
       .btn {
         background-color: #007bff;
@@ -41,6 +66,10 @@
   <body>
     <h1>Leht on tegemisel</h1>
     <p>Haldab: Andre Allese</p>
+    <div class="loading-container">
+      <div class="loading-bar"></div>
+    </div>
     <a href="mailto:andreallese@gmail.com" class="btn">Võta ühendust</a>
   </body>
 </html>
+```[cite: 1]
