@@ -3,73 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Allese.ee - Loading...</title>
+    <title>Allese.ee - Leht on tegemisel</title>
     <style>
       body {
-        margin: 0;
-        padding: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #000000; /* Puhas must taust */
+        background-color: #121212;
         color: #ffffff;
+        font-family: Arial, sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 100vh;
-        text-align: center;
-      }
-      .container {
-        padding: 20px;
+        height: 100vh;
+        margin: 0;
       }
       h1 {
         font-size: 2.5rem;
-        margin-bottom: 15px;
-        opacity: 0;
-        animation: fadeIn 1s ease-in forwards;
+        margin-bottom: 10px;
       }
       p {
-        font-size: 1.1rem;
-        margin-bottom: 30px;
         color: #aaaaaa;
-        opacity: 0;
-        animation: fadeIn 1s ease-in 0.5s forwards;
+        margin-bottom: 30px;
       }
-      /* Laadimisanimatsioon */
-      .loader {
-        width: 50px;
-        height: 50px;
-        border: 5px solid #333333;
-        border-top: 5px solid #e43f5a;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin: 0 auto;
-        opacity: 0;
-        animation:
-          fadeIn 1s ease-in 1s forwards,
-          spin 1s linear infinite 1s;
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.2s;
       }
-
-      @keyframes fadeIn {
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
+      .btn:hover {
+        background-color: #0056b3;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>allese.ee</h1>
-      <p>Sisu laadimine...</p>
-      <!-- Laadimisrõngas -->
-      <div class="loader"></div>
-    </div>
+    <h1>Leht on tegemisel</h1>
+    <p>Uus ja põnev sisu on peagi saadaval.</p>
+    <a href="mailto:andreallese@gmail.com" class="btn">Võta ühendust</a>
   </body>
 </html>
